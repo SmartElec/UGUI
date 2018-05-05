@@ -913,6 +913,7 @@ void UG_WaitForUpdate( void );
 void UG_Update( void );
 void UG_DrawBMP( UG_S16 xp, UG_S16 yp, UG_BMP* bmp );
 void UG_TouchUpdate( UG_S16 xp, UG_S16 yp, UG_U8 state );
+UG_RESULT UG_Button_CLICK( UG_WINDOW* wnd, UG_U8 id);
 
 /* Driver functions */
 void UG_DriverRegister( UG_U8 type, void* driver );
