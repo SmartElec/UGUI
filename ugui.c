@@ -5331,6 +5331,7 @@ void _UG_PutChar( char chr, UG_S16 x, UG_S16 y, UG_COLOR fc, UG_COLOR bc, const 
 			  index += font->char_width - actual_char_width;
 		  }
 	  }
+	   push_pixel = ((void*(*)(UG_S16, UG_S16, UG_S16, UG_S16))gui->driver[DRIVER_FILL_AREA].driver)(0,0,gui->x_dim-1,gui->y_dim-1);
    }
    else
    {
